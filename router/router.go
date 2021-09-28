@@ -10,10 +10,10 @@ func Setup() *gin.Engine {
 	// 中间件
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
-	apiv1 := r.Group("/api/v1")
+	apiV1 := r.Group("/api/v1")
 	{
 		// ding 路由
-		apiv1.POST("/ding/sendSms", controller.SendSms)
+		apiV1.POST("/ding/sendSms", controller.SendSms)
 	}
 	return r
 }

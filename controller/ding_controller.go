@@ -21,10 +21,10 @@ func SendSms(c *gin.Context) {
 		return
 	}
 
-	b, err := model.SendSms(form.Content)
-	if b {
-		utils.Response(c, http.StatusOK, errno.Success, err)
+	str, err := model.SendSms(form.Content)
+	if err != nil {
+		utils.Response(c, http.StatusInternalServerError, errno.Error, str)
 	} else {
-		utils.Response(c, http.StatusInternalServerError, errno.Error, nil)
+		utils.Response(c, http.StatusOK, errno.Success, err)
 	}
 }
