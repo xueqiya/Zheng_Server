@@ -23,8 +23,9 @@ func SendSms(c *gin.Context) {
 
 	str, err := model.SendSms(form.Content)
 	if err != nil {
-		utils.Response(c, http.StatusInternalServerError, errno.Error, str)
-	} else {
-		utils.Response(c, http.StatusOK, errno.Success, err)
+		utils.Response(c, http.StatusInternalServerError, errno.Error, err)
+		return
 	}
+
+	utils.Response(c, http.StatusOK, errno.Success, str)
 }
