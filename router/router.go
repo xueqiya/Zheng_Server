@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/xueqiya/go_project/controller"
+	"github.com/xueqiya/zheng_server/controller"
 )
 
 func Setup() *gin.Engine {

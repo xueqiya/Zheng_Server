@@ -2,9 +2,9 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/xueqiya/go_project/model"
-	"github.com/xueqiya/go_project/utils"
-	"github.com/xueqiya/go_project/utils/errno"
+	"github.com/xueqiya/zheng_server/model"
+	"github.com/xueqiya/zheng_server/utils"
+	"github.com/xueqiya/zheng_server/utils/errno"
 	"net/http"
 )
 

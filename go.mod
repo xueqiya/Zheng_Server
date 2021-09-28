@@ -1,4 +1,4 @@
-module github.com/xueqiya/go_project
+module github.com/xueqiya/zheng_server
 
 go 1.16
 

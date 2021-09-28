@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/xueqiya/go_project/config"
+	"github.com/xueqiya/zheng_server/config"
 	"log"
 	"net/http"
 	"time"
 
-	"github.com/xueqiya/go_project/router"
+	"github.com/xueqiya/zheng_server/router"
 )
 
 var sc = config.Cfg.Server
